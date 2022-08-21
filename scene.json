@@ -1,0 +1,53 @@
+{
+  "display": {
+    "title": "MrcBuilding",
+    "favicon": "favicon_asset",
+    "navmapThumbnail": "scene-thumbnail.png"
+  },
+  "owner": "",
+  "contact": {
+    "name": "MohammadReza",
+    "email": ""
+  },
+  "main": "bin/game.js",
+  "tags": [],
+  "scene": {
+    "parcels": [
+      "0,0",
+      "1,0"
+    ],
+    "base": "0,0"
+  },
+  "spawnPoints": [
+    {
+      "name": "spawn1",
+      "default": true,
+      "position": {
+        "x": 16,
+        "y": 0,
+        "z": 8
+      },
+      "cameraTarget": {
+        "x": 8,
+        "y": 1,
+        "z": 8
+      }
+    }
+  ],
+  "requiredPermissions": [ "ALLOW_TO_MOVE_PLAYER_INSIDE_SCENE"],
+  "featureToggles": {},
+  "source": {
+    "version": 1,
+    "origin": "builder",
+    "projectId": "371149a1-df4b-446e-b731-ca064a329c46",
+    "point": {
+      "x": 0,
+      "y": 0
+    },
+    "rotation": "east",
+    "layout": {
+      "rows": 2,
+      "cols": 1
+    }
+  }
+}
