@@ -19,4 +19,4 @@ FifthFloorPanel();
 
 
 
-//HudBoxTest();
+HudBoxTest();

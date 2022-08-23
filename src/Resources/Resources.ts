@@ -28,15 +28,15 @@ export default {
 
 
 
-    FirstColumnOffsetX: 16.6,
-    SecondColumnOffsetX: 15.95,
-    ThirdColumnOffsetX: 15.36,
+    FirstColumnOffsetZ: 15.45,
+    SecondColumnOffsetZ: 16.04,
+    ThirdColumnOffsetZ: 16.69,
 
-    GroundOffsetZ: 5.8,
-    SecondFloorOffsetZ: 2.8,
-    ThirdFloorOffsetZ: 3.5,
-    FourthFloorOffsetZ: 2.1,
-    FifthFloorOffsetZ: 2.1,
+    GroundOffsetX: 5.8,
+    SecondFloorOffsetX: 2.8,
+    ThirdFloorOffsetX: 3.6,
+    FourthFloorOffsetX: 2.1,
+    FifthFloorOffsetX: 2.1,
   },
   Text: {
     GroundButtonText: "Ground Floor(1)",
@@ -49,21 +49,21 @@ export default {
   Transforms:
   {
     StaticTransforms: {
-      BuildingPos: new Vector3(16, 0, 8),
-      BuildingScale: new Vector3(1, 1, 1),
-      BuildingRotation: new Quaternion(0, 0, 0, 1),
+      BuildingPos: new Vector3(8, 0, 16),
+      BuildingScale: new Vector3(0.8, 0.8, 0.8),
+      BuildingRotation: Quaternion.Euler(0, 90, 0),
 
-      BoxShapeScale: new Vector3(0.4, 0.4, 0.3),
+      BoxShapeScale: new Vector3(0.3, 0.4, 0.4),
       // BoxModel  scale: Resources.Transforms.StaticTransforms.BoxShapeScale
 
     },
     DynamicTransforms: {
-      GroundFloor: new Vector3(15.5, 0, 6),
-      SecondFloor: new Vector3(15, 3.5, 3),
-      ThirdFloor: new Vector3(15, 9.32, 4),
-      FourthFloor: new Vector3(15, 14.5, 3),
-      FifthFloor: new Vector3(15, 20.58, 3),
-      SixthFloor: new Vector3(15, 31.84, 3),
+      GroundFloor: new Vector3(6, 0, 15),
+      SecondFloor: new Vector3(3, 3.5, 15),
+      ThirdFloor: new Vector3(4, 9.32, 15),
+      FourthFloor: new Vector3(3, 14.5, 15),
+      FifthFloor: new Vector3(3, 20.58, 15),
+      SixthFloor: new Vector3(3, 31.84, 15),
     },
   },
 

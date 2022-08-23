@@ -28,9 +28,9 @@ export function FifthFloorPanel(): void {
         if (i == 0) {
             let transform = new Transform({
                 position: new Vector3(
-                    Resources.Variables.FirstColumnOffsetX,
+                    Resources.Variables.FifthFloorOffsetX,
                     Resources.Transforms.DynamicTransforms.FifthFloor.y + Resources.Variables.FifthFloorFirstRowButtonOffetY,
-                    Resources.Variables.FifthFloorOffsetZ),
+                    Resources.Variables.FirstColumnOffsetZ),
                 scale: Resources.Transforms.StaticTransforms.BoxShapeScale
             })
             button[i].addComponent(transform)
@@ -47,9 +47,9 @@ export function FifthFloorPanel(): void {
         } else if (i == 1) {
             const transform5 = new Transform({
                 position: new Vector3(
-                    Resources.Variables.SecondColumnOffsetX,
+                    Resources.Variables.FifthFloorOffsetX,
                     Resources.Transforms.DynamicTransforms.FifthFloor.y + Resources.Variables.FifthFloorFirstRowButtonOffetY,
-                    Resources.Variables.FifthFloorOffsetZ),
+                    Resources.Variables.SecondColumnOffsetZ),
                 scale: Resources.Transforms.StaticTransforms.BoxShapeScale
             })
             button[i].addComponent(transform5)
@@ -66,9 +66,9 @@ export function FifthFloorPanel(): void {
         } else if (i == 2) {
             const transform6 = new Transform({
                 position: new Vector3(
-                    Resources.Variables.ThirdColumnOffsetX,
+                    Resources.Variables.FifthFloorOffsetX,
                     Resources.Transforms.DynamicTransforms.FifthFloor.y + Resources.Variables.FifthFloorFirstRowButtonOffetY,
-                    Resources.Variables.FifthFloorOffsetZ),
+                    Resources.Variables.ThirdColumnOffsetZ),
                 scale: Resources.Transforms.StaticTransforms.BoxShapeScale
             })
             button[i].addComponent(transform6)
@@ -86,9 +86,9 @@ export function FifthFloorPanel(): void {
         } else if (i == 3) {
             const transform3 = new Transform({
                 position: new Vector3(
-                    Resources.Variables.ThirdColumnOffsetX,
+                    Resources.Variables.FifthFloorOffsetX,
                     Resources.Transforms.DynamicTransforms.FifthFloor.y + Resources.Variables.FifthFloorSecondRowButtonOffetY
-                    , Resources.Variables.FifthFloorOffsetZ),
+                    , Resources.Variables.ThirdColumnOffsetZ),
                 scale: Resources.Transforms.StaticTransforms.BoxShapeScale
             })
             button[i].addComponent(transform3)
@@ -105,9 +105,9 @@ export function FifthFloorPanel(): void {
         } else if (i == 4) {
             const transform2 = new Transform({
                 position: new Vector3(
-                    Resources.Variables.SecondColumnOffsetX,
+                    Resources.Variables.FifthFloorOffsetX,
                     Resources.Transforms.DynamicTransforms.FifthFloor.y + Resources.Variables.FifthFloorSecondRowButtonOffetY,
-                    Resources.Variables.FifthFloorOffsetZ),
+                    Resources.Variables.SecondColumnOffsetZ),
                 scale: Resources.Transforms.StaticTransforms.BoxShapeScale
             })
             button[i].addComponent(transform2)
@@ -126,9 +126,9 @@ export function FifthFloorPanel(): void {
 
             const transform3 = new Transform({
                 position: new Vector3(
-                    Resources.Variables.FirstColumnOffsetX,
+                    Resources.Variables.FifthFloorOffsetX,
                     Resources.Transforms.DynamicTransforms.FifthFloor.y + Resources.Variables.FifthFloorSecondRowButtonOffetY,
-                    Resources.Variables.FifthFloorOffsetZ),
+                    Resources.Variables.FirstColumnOffsetZ),
                 scale: Resources.Transforms.StaticTransforms.BoxShapeScale
             })
             button[i].addComponent(transform3)

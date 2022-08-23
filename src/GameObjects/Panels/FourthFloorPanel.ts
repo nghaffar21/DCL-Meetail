@@ -28,9 +28,9 @@ export function FourthFloorPanel(): void {
         if (i == 0) {
             let transform = new Transform({
                 position: new Vector3(
-                    Resources.Variables.FirstColumnOffsetX,
+                    Resources.Variables.FourthFloorOffsetX,
                     Resources.Transforms.DynamicTransforms.FourthFloor.y + Resources.Variables.FourthFloorFirstRowButtonOffetY,
-                    Resources.Variables.FourthFloorOffsetZ),
+                    Resources.Variables.FirstColumnOffsetZ),
                 scale: Resources.Transforms.StaticTransforms.BoxShapeScale
             })
             button[i].addComponent(transform)
@@ -47,9 +47,9 @@ export function FourthFloorPanel(): void {
         } else if (i == 1) {
             const transform5 = new Transform({
                 position: new Vector3(
-                    Resources.Variables.SecondColumnOffsetX,
+                    Resources.Variables.FourthFloorOffsetX,
                     Resources.Transforms.DynamicTransforms.FourthFloor.y + Resources.Variables.FourthFloorFirstRowButtonOffetY,
-                    Resources.Variables.FourthFloorOffsetZ),
+                    Resources.Variables.SecondColumnOffsetZ),
                 scale: Resources.Transforms.StaticTransforms.BoxShapeScale
             })
             button[i].addComponent(transform5)
@@ -66,9 +66,9 @@ export function FourthFloorPanel(): void {
         } else if (i == 2) {
             const transform6 = new Transform({
                 position: new Vector3(
-                    Resources.Variables.ThirdColumnOffsetX,
+                    Resources.Variables.FourthFloorOffsetX,
                     Resources.Transforms.DynamicTransforms.FourthFloor.y + Resources.Variables.FourthFloorFirstRowButtonOffetY,
-                    Resources.Variables.FourthFloorOffsetZ),
+                    Resources.Variables.ThirdColumnOffsetZ),
                 scale: Resources.Transforms.StaticTransforms.BoxShapeScale
             })
             button[i].addComponent(transform6)
@@ -82,13 +82,13 @@ export function FourthFloorPanel(): void {
                     }
                 ))
 
-   
+
         } else if (i == 3) {
             const transform3 = new Transform({
                 position: new Vector3(
-                    Resources.Variables.ThirdColumnOffsetX,
+                    Resources.Variables.FourthFloorOffsetX,
                     Resources.Transforms.DynamicTransforms.FourthFloor.y + Resources.Variables.FourthFloorSecondRowButtonOffetY
-                    , Resources.Variables.FourthFloorOffsetZ),
+                    , Resources.Variables.ThirdColumnOffsetZ),
                 scale: Resources.Transforms.StaticTransforms.BoxShapeScale
             })
             button[i].addComponent(transform3)
@@ -105,9 +105,9 @@ export function FourthFloorPanel(): void {
         } else if (i == 4) {
             const transform2 = new Transform({
                 position: new Vector3(
-                    Resources.Variables.SecondColumnOffsetX,
+                    Resources.Variables.FourthFloorOffsetX,
                     Resources.Transforms.DynamicTransforms.FourthFloor.y + Resources.Variables.FourthFloorSecondRowButtonOffetY,
-                    Resources.Variables.FourthFloorOffsetZ),
+                    Resources.Variables.SecondColumnOffsetZ),
                 scale: Resources.Transforms.StaticTransforms.BoxShapeScale
             })
             button[i].addComponent(transform2)
@@ -123,12 +123,12 @@ export function FourthFloorPanel(): void {
                 ))
 
         } else if (i == 5) {
-                
+
             const transform3 = new Transform({
                 position: new Vector3(
-                    Resources.Variables.FirstColumnOffsetX,
+                    Resources.Variables.FourthFloorOffsetX,
                     Resources.Transforms.DynamicTransforms.FourthFloor.y + Resources.Variables.FourthFloorSecondRowButtonOffetY,
-                    Resources.Variables.FourthFloorOffsetZ),
+                    Resources.Variables.FirstColumnOffsetZ),
                 scale: Resources.Transforms.StaticTransforms.BoxShapeScale
             })
             button[i].addComponent(transform3)

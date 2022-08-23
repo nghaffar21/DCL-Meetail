@@ -24,9 +24,9 @@ export function GroundPanel(): void {
         if (i == 0) {
             let transform = new Transform({
                 position: new Vector3(
-                    Resources.Variables.FirstColumnOffsetX,
+                    Resources.Variables.GroundOffsetX,
                     Resources.Transforms.DynamicTransforms.GroundFloor.y + Resources.Variables.GroundFirstRowButtonOffetY,
-                    Resources.Variables.GroundOffsetZ),
+                    Resources.Variables.FirstColumnOffsetZ),
                 scale: Resources.Transforms.StaticTransforms.BoxShapeScale
             })
             button[i].addComponent(transform)
@@ -43,9 +43,9 @@ export function GroundPanel(): void {
         } else if (i == 1) {
             const transform2 = new Transform({
                 position: new Vector3(
-                    Resources.Variables.FirstColumnOffsetX,
+                    Resources.Variables.GroundOffsetX,
                     Resources.Transforms.DynamicTransforms.GroundFloor.y + Resources.Variables.GroundSecondRowButtonOffetY,
-                    Resources.Variables.GroundOffsetZ),
+                    Resources.Variables.FirstColumnOffsetZ),
                 scale: Resources.Transforms.StaticTransforms.BoxShapeScale
             })
             button[i].addComponent(transform2)
@@ -62,9 +62,9 @@ export function GroundPanel(): void {
         } else if (i == 2) {
             const transform3 = new Transform({
                 position: new Vector3(
-                    Resources.Variables.SecondColumnOffsetX,
+                    Resources.Variables.GroundOffsetX,
                     Resources.Transforms.DynamicTransforms.GroundFloor.y + Resources.Variables.GroundSecondRowButtonOffetY,
-                    Resources.Variables.GroundOffsetZ),
+                    Resources.Variables.SecondColumnOffsetZ),
                 scale: Resources.Transforms.StaticTransforms.BoxShapeScale
             })
             button[i].addComponent(transform3)
@@ -82,9 +82,9 @@ export function GroundPanel(): void {
         }else if (i == 3) {
             const transform4 = new Transform({
                 position: new Vector3(
-                    Resources.Variables.ThirdColumnOffsetX,
+                    Resources.Variables.GroundOffsetX,
                     Resources.Transforms.DynamicTransforms.GroundFloor.y + Resources.Variables.GroundSecondRowButtonOffetY
-                    , Resources.Variables.GroundOffsetZ),
+                    , Resources.Variables.ThirdColumnOffsetZ),
                 scale: Resources.Transforms.StaticTransforms.BoxShapeScale
             })
             button[i].addComponent(transform4)
@@ -100,13 +100,13 @@ export function GroundPanel(): void {
         }else if (i == 4) {
             const transform5 = new Transform({
                 position: new Vector3(
-                    Resources.Variables.SecondColumnOffsetX,
+                    Resources.Variables.GroundOffsetX,
                     Resources.Transforms.DynamicTransforms.GroundFloor.y + Resources.Variables.GroundFirstRowButtonOffetY,
-                    Resources.Variables.GroundOffsetZ),
+                    Resources.Variables.SecondColumnOffsetZ),
                 scale: Resources.Transforms.StaticTransforms.BoxShapeScale
             })
             button[i].addComponent(transform5)
-        
+
             //clickable
             button[i].addComponent(
                 new OnPointerDown(() => {
@@ -119,9 +119,9 @@ export function GroundPanel(): void {
         }else if (i ==5) {
             const transform6 = new Transform({
                 position: new Vector3(
-                    Resources.Variables.ThirdColumnOffsetX,
+                    Resources.Variables.GroundOffsetX,
                     Resources.Transforms.DynamicTransforms.GroundFloor.y + Resources.Variables.GroundFirstRowButtonOffetY,
-                    Resources.Variables.GroundOffsetZ),
+                    Resources.Variables.ThirdColumnOffsetZ),
                 scale: Resources.Transforms.StaticTransforms.BoxShapeScale
             })
             button[i].addComponent(transform6)
