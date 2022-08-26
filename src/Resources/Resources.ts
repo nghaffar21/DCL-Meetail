@@ -2,7 +2,7 @@ export default {
   Models:
   {
     TestModel: new GLTFShape("models/cubeTest.glb"),
-    MrcBuilding: new GLTFShape("models/MrcBuilding.glb"),
+    MrcBuilding: new GLTFShape("models/MrcBuilding2.glb"),
     MrcPanel: new GLTFShape("models/MrcPanel.glb")
   },
   Variables:
@@ -40,7 +40,7 @@ export default {
   },
   Text: {
     GroundButtonText: "Ground Floor(1)",
-    SecondFloorButtonText: "MarkoMkt Floor(2)",
+    SecondFloorButtonText: "MarcoMkt Floor(2)",
     ThirdFloorButtonText: "XinNux Floor(3)",
     FourthFloorButtonText: "BlueO Floor(4)",
     FifthFloorButtonText: "Meetail Floor(5)",
@@ -63,7 +63,7 @@ export default {
       ThirdFloor: new Vector3(4, 9.32, 15),
       FourthFloor: new Vector3(3, 14.5, 15),
       FifthFloor: new Vector3(3, 20.58, 15),
-      SixthFloor: new Vector3(3, 31.84, 15),
+      SixthFloor: new Vector3(3, 25, 15),//31.84
     },
   },
 
