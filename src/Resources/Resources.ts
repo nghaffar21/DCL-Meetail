@@ -10,8 +10,8 @@ export default {
 
     TeleportDelay: 100,
 
-    GroundFirstRowButtonOffetY: 0.99,
-    GroundSecondRowButtonOffetY: 1.55,
+    GroundFirstRowButtonOffetY: 1.03,
+    GroundSecondRowButtonOffetY: 1.59,
 
     SecondFloorFirstRowButtonOffetY: 0.45,
     SecondFloorSecondRowButtonOffetY: 1.05,
@@ -19,24 +19,26 @@ export default {
     ThirdFloorFirstRowButtonOffetY: -0.1,
     ThirdFloorSecondRowButtonOffetY: 0.35,
 
-    FourthFloorFirstRowButtonOffetY: 0.85,
+    FourthFloorFirstRowButtonOffetY: 0.91,
     FourthFloorSecondRowButtonOffetY: 1.45,
 
 
     FifthFloorFirstRowButtonOffetY: 0.45,
     FifthFloorSecondRowButtonOffetY: 1.05,
 
+    MeetingFloorFirstRowButtonOffetY: 0.22,
+    MeetingFloorSecondRowButtonOffetY: 0.78,
 
+    FirstColumnOffsetZ: 16.57,
+    SecondColumnOffsetZ: 15.92,
+    ThirdColumnOffsetZ: 15.33,
 
-    FirstColumnOffsetZ: 15.45,
-    SecondColumnOffsetZ: 16.04,
-    ThirdColumnOffsetZ: 16.69,
-
-    GroundOffsetX: 5.8,
-    SecondFloorOffsetX: 2.8,
-    ThirdFloorOffsetX: 3.6,
-    FourthFloorOffsetX: 2.1,
-    FifthFloorOffsetX: 2.1,
+    GroundOffsetX: 10.2,
+    SecondFloorOffsetX: 13.2,
+    ThirdFloorOffsetX: 12.5,
+    FourthFloorOffsetX: 14,
+    FifthFloorOffsetX: 12.5,
+    MeetingFloorOffsetX: 14
   },
   Text: {
     GroundButtonText: "Ground Floor(1)",
@@ -51,7 +53,7 @@ export default {
     StaticTransforms: {
       BuildingPos: new Vector3(8, 0, 16),
       BuildingScale: new Vector3(0.8, 0.8, 0.8),
-      BuildingRotation: Quaternion.Euler(0, 90, 0),
+      BuildingRotation: Quaternion.Euler(0, 270, 0),
 
       BoxShapeScale: new Vector3(0.3, 0.4, 0.4),
       // BoxModel  scale: Resources.Transforms.StaticTransforms.BoxShapeScale
@@ -63,7 +65,7 @@ export default {
       ThirdFloor: new Vector3(4, 9.32, 15),
       FourthFloor: new Vector3(3, 14.5, 15),
       FifthFloor: new Vector3(3, 20.58, 15),
-      SixthFloor: new Vector3(3, 25, 15),//31.84
+      SixthFloor: new Vector3(3, 22, 15),//31.84
     },
   },
 

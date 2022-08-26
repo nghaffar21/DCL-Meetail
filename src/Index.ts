@@ -5,6 +5,7 @@ import { SecondFloorPanel } from "./GameObjects/Panels/SecondFloorPlanel";
 import { ThirdFloorPanel } from "./GameObjects/Panels/ThirdFloorPanel";
 import { FourthFloorPanel } from "./GameObjects/Panels/FourthFloorPanel";
 import { FifthFloorPanel } from "./GameObjects/Panels/FifthFloorPanel";
+import { MeetingFloorPanel } from "./GameObjects/Panels/MeetingFloorPanel";
 import { HudBoxTest } from "./GameObjects/Other/HudBox";
 import { createButton } from "GameObjects/Button"
 import { hud } from "@dcl/builder-hud"
@@ -18,7 +19,8 @@ GroundPanel();
 SecondFloorPanel();
 ThirdFloorPanel();
 FourthFloorPanel();
-FifthFloorPanel();
+//FifthFloorPanel();
+MeetingFloorPanel();
 //All Panels
 
 
@@ -45,11 +47,11 @@ const mrcbuildingPCoorporativ = new Entity('mrcbuildingPCoorporativ')
 mrcbuildingPCoorporativ.setParent(_scene)
 const transform5 = new Transform({
   position: new Vector3(8,-2,16), // -23
-  rotation: Quaternion.Euler(0, 90, 0),
+  rotation: Quaternion.Euler(0, 270, 0),
   scale: new Vector3(1, 1, 1)
 })
 mrcbuildingPCoorporativ.addComponentOrReplace(transform5)
-const gltfShape3 = new GLTFShape("ae278e8b-a71f-426b-8f7a-75fe960ec6e5/MrcBuilding008_p05_coorporativemode_02.glb")
+const gltfShape3 = new GLTFShape("ae278e8b-a71f-426b-8f7a-75fe960ec6e5/MrcBuilding009_p05_coorporativemode.glb")
 gltfShape3.withCollisions = true
 gltfShape3.isPointerBlocker = true
 gltfShape3.visible = true
@@ -61,11 +63,11 @@ const mrcbuildingPartymood = new Entity('mrcbuildingPartymood')
 mrcbuildingPartymood.setParent(_scene)
 const transform6 = new Transform({
   position: new Vector3(8,-2,16), // -23
-  rotation: Quaternion.Euler(0, 90, 0),
+  rotation: Quaternion.Euler(0, 270, 0),
   scale: new Vector3(1, 1, 1)
 })
 mrcbuildingPartymood.addComponentOrReplace(transform6)
-const gltfShape4 = new GLTFShape("cde62774-ee4a-428f-86a1-2db3e4a28a4d/MrcBuilding008_p05_partymood.glb")
+const gltfShape4 = new GLTFShape("cde62774-ee4a-428f-86a1-2db3e4a28a4d/MrcBuilding010_p05_partymode.glb")
 gltfShape4.withCollisions = true
 gltfShape4.isPointerBlocker = true
 gltfShape4.visible = true
@@ -199,12 +201,12 @@ for(let i = 0; i < 5; i++) {
 }
 
 // west side color buttons
-xAxis = 1.89
-
-for(let i = 0; i < 5; i++) {
-  xAxis = xAxis - 0.75
-  createButton(mrcbuildingPartymood, new Vector3(xAxis,24.4,-6.1), new Vector3(0.5, 0.5, 0.5), changeLight, true, i);
-}
+// xAxis = 1.89
+//
+// for(let i = 0; i < 5; i++) {
+//   xAxis = xAxis - 0.75
+//   createButton(mrcbuildingPartymood, new Vector3(xAxis,24.4,-6.1), new Vector3(0.5, 0.5, 0.5), changeLight, true, i);
+// }
 
 // createButton(_scene, new Vector3(3,1,6), new Vector3(0.7,0.7,0.7), goToURL, false, 0);
 // function goToURL() {

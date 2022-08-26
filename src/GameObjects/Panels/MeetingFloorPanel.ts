@@ -1,7 +1,7 @@
 import Resources from "src/Resources/Resources";
 import { Teleport } from "src/Player/Teleport";
 
-export function FifthFloorPanel(): void {
+export function MeetingFloorPanel(): void {
 
 
 
@@ -28,8 +28,8 @@ export function FifthFloorPanel(): void {
         if (i == 0) {
             let transform = new Transform({
                 position: new Vector3(
-                    Resources.Variables.FifthFloorOffsetX,
-                    Resources.Transforms.DynamicTransforms.FifthFloor.y + Resources.Variables.FifthFloorFirstRowButtonOffetY,
+                    Resources.Variables.MeetingFloorOffsetX,
+                    Resources.Transforms.DynamicTransforms.SixthFloor.y + Resources.Variables.MeetingFloorFirstRowButtonOffetY,
                     Resources.Variables.FirstColumnOffsetZ),
                 scale: Resources.Transforms.StaticTransforms.BoxShapeScale
             })
@@ -47,8 +47,8 @@ export function FifthFloorPanel(): void {
         } else if (i == 1) {
             const transform5 = new Transform({
                 position: new Vector3(
-                    Resources.Variables.FifthFloorOffsetX,
-                    Resources.Transforms.DynamicTransforms.FifthFloor.y + Resources.Variables.FifthFloorFirstRowButtonOffetY,
+                    Resources.Variables.MeetingFloorOffsetX,
+                    Resources.Transforms.DynamicTransforms.SixthFloor.y + Resources.Variables.MeetingFloorFirstRowButtonOffetY,
                     Resources.Variables.SecondColumnOffsetZ),
                 scale: Resources.Transforms.StaticTransforms.BoxShapeScale
             })
@@ -66,8 +66,8 @@ export function FifthFloorPanel(): void {
         } else if (i == 2) {
             const transform6 = new Transform({
                 position: new Vector3(
-                    Resources.Variables.FifthFloorOffsetX,
-                    Resources.Transforms.DynamicTransforms.FifthFloor.y + Resources.Variables.FifthFloorFirstRowButtonOffetY,
+                    Resources.Variables.MeetingFloorOffsetX,
+                    Resources.Transforms.DynamicTransforms.SixthFloor.y + Resources.Variables.MeetingFloorFirstRowButtonOffetY,
                     Resources.Variables.ThirdColumnOffsetZ),
                 scale: Resources.Transforms.StaticTransforms.BoxShapeScale
             })
@@ -86,8 +86,8 @@ export function FifthFloorPanel(): void {
         } else if (i == 3) {
             const transform3 = new Transform({
                 position: new Vector3(
-                    Resources.Variables.FifthFloorOffsetX,
-                    Resources.Transforms.DynamicTransforms.FifthFloor.y + Resources.Variables.FifthFloorSecondRowButtonOffetY
+                    Resources.Variables.MeetingFloorOffsetX,
+                    Resources.Transforms.DynamicTransforms.SixthFloor.y + Resources.Variables.MeetingFloorSecondRowButtonOffetY
                     , Resources.Variables.ThirdColumnOffsetZ),
                 scale: Resources.Transforms.StaticTransforms.BoxShapeScale
             })
@@ -105,8 +105,8 @@ export function FifthFloorPanel(): void {
         } else if (i == 4) {
             const transform2 = new Transform({
                 position: new Vector3(
-                    Resources.Variables.FifthFloorOffsetX,
-                    Resources.Transforms.DynamicTransforms.FifthFloor.y + Resources.Variables.FifthFloorSecondRowButtonOffetY,
+                    Resources.Variables.MeetingFloorOffsetX,
+                    Resources.Transforms.DynamicTransforms.SixthFloor.y + Resources.Variables.MeetingFloorSecondRowButtonOffetY,
                     Resources.Variables.SecondColumnOffsetZ),
                 scale: Resources.Transforms.StaticTransforms.BoxShapeScale
             })
@@ -126,8 +126,8 @@ export function FifthFloorPanel(): void {
 
             const transform3 = new Transform({
                 position: new Vector3(
-                    Resources.Variables.FifthFloorOffsetX,
-                    Resources.Transforms.DynamicTransforms.FifthFloor.y + Resources.Variables.FifthFloorSecondRowButtonOffetY,
+                    Resources.Variables.MeetingFloorOffsetX,
+                    Resources.Transforms.DynamicTransforms.SixthFloor.y + Resources.Variables.MeetingFloorSecondRowButtonOffetY,
                     Resources.Variables.FirstColumnOffsetZ),
                 scale: Resources.Transforms.StaticTransforms.BoxShapeScale
             })
