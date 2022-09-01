@@ -46,12 +46,12 @@ const mrcbuildingPCoorporativ = new Entity('mrcbuildingPCoorporativ')
 //engine.addEntity(mrcbuildingPCoorporativ);
 mrcbuildingPCoorporativ.setParent(_scene)
 const transform5 = new Transform({
-  position: new Vector3(8,-2,16), // -23
+  position: new Vector3(8,0,16), // -23
   rotation: Quaternion.Euler(0, 270, 0),
   scale: new Vector3(1, 1, 1)
 })
 mrcbuildingPCoorporativ.addComponentOrReplace(transform5)
-const gltfShape3 = new GLTFShape("ae278e8b-a71f-426b-8f7a-75fe960ec6e5/MrcBuilding009_p05_coorporativemode.glb")
+const gltfShape3 = new GLTFShape("Models/corporativeMode/corporativeMode6.glb")
 gltfShape3.withCollisions = true
 gltfShape3.isPointerBlocker = true
 gltfShape3.visible = true
@@ -62,33 +62,33 @@ const mrcbuildingPartymood = new Entity('mrcbuildingPartymood')
 //engine.addEntity(mrcbuildingPartymood)
 mrcbuildingPartymood.setParent(_scene)
 const transform6 = new Transform({
-  position: new Vector3(8,-2,16), // -23
+  position: new Vector3(8,0,16), // -23
   rotation: Quaternion.Euler(0, 270, 0),
   scale: new Vector3(1, 1, 1)
 })
 mrcbuildingPartymood.addComponentOrReplace(transform6)
-const gltfShape4 = new GLTFShape("cde62774-ee4a-428f-86a1-2db3e4a28a4d/MrcBuilding010_p05_partymode.glb")
+const gltfShape4 = new GLTFShape("Models/partyMode/partyMode5.glb")
 gltfShape4.withCollisions = true
 gltfShape4.isPointerBlocker = true
 gltfShape4.visible = true
 mrcbuildingPartymood.addComponentOrReplace(gltfShape4)
 
-const mrcbuildingPartymoodL = new Entity('mrcbuildingPartymoodL')
-engine.addEntity(mrcbuildingPartymoodL)
-mrcbuildingPartymoodL.setParent(_scene)
-const transform7 = new Transform({
-  position: new Vector3(0,0,0),
-  rotation: new Quaternion(0, 0, 0, 1),
-  scale: new Vector3(1, 1, 1)
-})
-mrcbuildingPartymoodL.addComponentOrReplace(transform7)
-const gltfShape5 = new GLTFShape("4007ce5a-051e-4ae7-b7c3-1ce3b051862d/MrcBuilding008_p05_partymood_lightanimation_2.glb")
-gltfShape5.withCollisions = true
-gltfShape5.isPointerBlocker = true
-gltfShape5.visible = true
-mrcbuildingPartymoodL.addComponentOrReplace(gltfShape5)
-mrcbuildingPartymoodL.setParent(mrcbuildingPartymood);
-hud.attachToEntity(mrcbuildingPartymoodL)
+// const partymoodLightProjections = new Entity('partymoodLightProjections')
+// engine.addEntity(partymoodLightProjections)
+// partymoodLightProjections.setParent(partymoodLightProjections)
+// const transform7 = new Transform({
+//   position: new Vector3(0,0,0),
+//   rotation: new Quaternion(0, 0, 0, 1),
+//   scale: new Vector3(1, 1, 1)
+// })
+// partymoodLightProjections.addComponentOrReplace(transform7)
+// const gltfShape5 = new GLTFShape("4007ce5a-051e-4ae7-b7c3-1ce3b051862d/MrcBuilding008_p05_partymode_lightanimation_00_projections.glb")
+// gltfShape5.withCollisions = true
+// gltfShape5.isPointerBlocker = true
+// gltfShape5.visible = true
+// partymoodLightProjections.addComponentOrReplace(gltfShape5)
+// partymoodLightProjections.setParent(partymoodLightProjections);
+// hud.attachToEntity(partymoodLightProjections)
 
 // --------- start of party lights ---------
 
@@ -107,7 +107,7 @@ const gltfShapeBlueLight = new GLTFShape("4007ce5a-051e-4ae7-b7c3-1ce3b051862d/M
 const gltfShapeOrangeLight = new GLTFShape("4007ce5a-051e-4ae7-b7c3-1ce3b051862d/MrcBuilding008_p05_partymode_lightanimation_01_orange.glb")
 
 const lightTransform = new Transform({
-  position: new Vector3(0,0,0),
+  position: new Vector3(0,-10,0),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
@@ -197,7 +197,7 @@ let xAxis = 1.89
 
 for(let i = 0; i < 5; i++) {
   xAxis = xAxis - 0.75
-  createButton(mrcbuildingPartymood, new Vector3(xAxis,24.4,6.1), new Vector3(0.5, 0.5, 0.5), changeLight, true, i);
+  createButton(mrcbuildingPartymood, new Vector3(xAxis,20.6,6.1), new Vector3(0.5, 0.5, 0.5), changeLight, true, i);
 }
 
 // west side color buttons
@@ -208,10 +208,10 @@ for(let i = 0; i < 5; i++) {
 //   createButton(mrcbuildingPartymood, new Vector3(xAxis,24.4,-6.1), new Vector3(0.5, 0.5, 0.5), changeLight, true, i);
 // }
 
-// createButton(_scene, new Vector3(3,1,6), new Vector3(0.7,0.7,0.7), goToURL, false, 0);
-// function goToURL() {
-//   openExternalURL("https://spatial.io/s/MRC-Group-62f6c1f477f41c0001a69f49?share=8039001326585555215&utm_source=%2Fspaces");
-// }
+createButton(_scene, new Vector3(3,1,6), new Vector3(0.7,0.7,0.7), goToURL, true, 0);
+function goToURL() {
+  openExternalURL("https://spatial.io/s/Nimas-Lo-Fi-Hangout-630cd22c8e10f200010ccb5f?share=4359418535863837436");
+}
 
 // ------- end of Buttons -------
 

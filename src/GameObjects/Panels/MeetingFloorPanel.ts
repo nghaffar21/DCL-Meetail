@@ -3,10 +3,6 @@ import { Teleport } from "src/Player/Teleport";
 
 export function MeetingFloorPanel(): void {
 
-
-
-
-
     //#region TransparentMaterial
     let buttonMaterial = new Material()
     let transparentColor = new Color4(0, 0, 0, 0)
