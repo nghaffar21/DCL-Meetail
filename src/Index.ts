@@ -67,7 +67,7 @@ const transform6 = new Transform({
   scale: new Vector3(1, 1, 1)
 })
 mrcbuildingPartymood.addComponentOrReplace(transform6)
-const gltfShape4 = new GLTFShape("Models/partyMode/partyMode5.glb")
+const gltfShape4 = new GLTFShape("Models/partyMode/partyMode6.glb")
 gltfShape4.withCollisions = true
 gltfShape4.isPointerBlocker = true
 gltfShape4.visible = true
@@ -107,7 +107,7 @@ const gltfShapeBlueLight = new GLTFShape("4007ce5a-051e-4ae7-b7c3-1ce3b051862d/M
 const gltfShapeOrangeLight = new GLTFShape("4007ce5a-051e-4ae7-b7c3-1ce3b051862d/MrcBuilding008_p05_partymode_lightanimation_01_orange.glb")
 
 const lightTransform = new Transform({
-  position: new Vector3(0,-10,0),
+  position: new Vector3(0,-3.75,0),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
