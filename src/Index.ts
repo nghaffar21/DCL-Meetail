@@ -319,10 +319,10 @@ const publicKeyRequest = executeTask(async () => {
 
       if(publicKey.toString() == wallets[i]) {
         // Button to change to party mode
-        createButton(_scene, new Vector3(2.1,2,6), new Vector3(0.7,0.7,0.7), switchToPartyMode, false, 0);
+        createButton(_scene, new Vector3(10,1.6,18.3), new Vector3(0.7,0.7,0.7), switchToPartyMode, true, 0);
 
         // Button to change to corporative mode
-        createButton(_scene, new Vector3(2.1,1,6), new Vector3(0.7,0.7,0.7), switchToCorporativeMode, false, 0);
+        createButton(_scene, new Vector3(10,0.8,18.3), new Vector3(0.7,0.7,0.7), switchToCorporativeMode, true, 0);
       }
       return publicKey;
     }
