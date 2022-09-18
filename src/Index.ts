@@ -208,10 +208,10 @@ for(let i = 0; i < 5; i++) {
 //   createButton(mrcbuildingPartymood, new Vector3(xAxis,24.4,-6.1), new Vector3(0.5, 0.5, 0.5), changeLight, true, i);
 // }
 
-createButton(_scene, new Vector3(3,1,6), new Vector3(0.7,0.7,0.7), goToURL, true, 0);
-function goToURL() {
-  openExternalURL("https://spatial.io/s/Nimas-Lo-Fi-Hangout-630cd22c8e10f200010ccb5f?share=4359418535863837436");
-}
+// createButton(_scene, new Vector3(3,1,6), new Vector3(0.7,0.7,0.7), goToURL, true, 0);
+// function goToURL() {
+//   openExternalURL("https://spatial.io/s/Nimas-Lo-Fi-Hangout-630cd22c8e10f200010ccb5f?share=4359418535863837436");
+// }
 
 // ------- end of Buttons -------
 
@@ -317,14 +317,34 @@ const publicKeyRequest = executeTask(async () => {
 
     for(let i = 0; i < wallets.length; i++) {
 
-      if(publicKey.toString() == wallets[i]) {
+      log("wallet address bitch:" + wallets[i].toLowerCase());
+
+      if(publicKey.toString() == wallets[i].toLowerCase()) {
+
+        // 3D models of the mode buttons
+        const buttonModels = new Entity('buttonModels')
+        engine.addEntity(buttonModels);
+        buttonModels.setParent(_scene)
+        const buttonsTransform = new Transform({
+          position: new Vector3(8,0,16),
+          rotation: Quaternion.Euler(0, 270, 0),
+          scale: new Vector3(1, 1, 1)
+        })
+        buttonModels.addComponentOrReplace(buttonsTransform)
+        const buttonsgltfShape = new GLTFShape("Models/modeButtons.glb")
+        buttonsgltfShape.withCollisions = true
+        buttonsgltfShape.isPointerBlocker = true
+        buttonsgltfShape.visible = true
+        buttonModels.addComponentOrReplace(buttonsgltfShape)
+        hud.attachToEntity(buttonModels)
+
         // Button to change to party mode
         createButton(_scene, new Vector3(10,1.6,18.3), new Vector3(0.7,0.7,0.7), switchToPartyMode, true, 0);
 
         // Button to change to corporative mode
         createButton(_scene, new Vector3(10,0.8,18.3), new Vector3(0.7,0.7,0.7), switchToCorporativeMode, true, 0);
       }
-      return publicKey;
+      //return publicKey;
     }
 
   } catch(e) {
