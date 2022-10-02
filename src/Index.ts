@@ -122,37 +122,6 @@ for(let i = 0; i < lights.length; i++) {
   lights[i].addComponent(lightTransform);
 }
 
-// --------- end of party lights ---------
-
-// used only for the corporative mode button
-const sceneMessageBus = new MessageBus();
-function switchToCorporativeMode(i: Number) {
-  sceneMessageBus.emit("switchToCorporativeMode", {});
-  changeToCorpModeOnDatabase();
-}
-sceneMessageBus.on("switchToCorporativeMode", () => {
-  engine.removeEntity(mrcbuildingPartymood);
-  _scene.addComponent(
-    new utils.Delay(2000, () => {
-      engine.addEntity(mrcbuildingPCoorporativ);
-    })
-  )
-});
-
-// used only for the party mode button
-function switchToPartyMode(i: Number) {
-  sceneMessageBus.emit("switchToPartyMode", {});
-  changeToPartyModeOnDatabase();
-}
-sceneMessageBus.on("switchToPartyMode", () => {
-  engine.removeEntity(mrcbuildingPCoorporativ);
-  _scene.addComponent(
-    new utils.Delay(2000, () => {
-      engine.addEntity(mrcbuildingPartymood);
-    })
-  )
-});
-
 function changeLight(color: Number) {
 
   if(color === 0) {
@@ -187,6 +156,38 @@ function changeLight(color: Number) {
     orangeLight.addComponent(gltfShapeOrangeLight);
   }
 }
+
+// --------- end of party lights ---------
+
+// --------- start of mode buttons message bus ---------
+const sceneMessageBus = new MessageBus();
+function switchToCorporativeMode(i: Number) {
+  sceneMessageBus.emit("switchToCorporativeMode", {});
+  changeToCorpModeOnDatabase();
+}
+sceneMessageBus.on("switchToCorporativeMode", () => {
+  engine.removeEntity(mrcbuildingPartymood);
+  _scene.addComponent(
+    new utils.Delay(2000, () => {
+      engine.addEntity(mrcbuildingPCoorporativ);
+    })
+  )
+});
+
+// used only for the party mode button
+function switchToPartyMode(i: Number) {
+  sceneMessageBus.emit("switchToPartyMode", {});
+  changeToPartyModeOnDatabase();
+}
+sceneMessageBus.on("switchToPartyMode", () => {
+  engine.removeEntity(mrcbuildingPCoorporativ);
+  _scene.addComponent(
+    new utils.Delay(2000, () => {
+      engine.addEntity(mrcbuildingPartymood);
+    })
+  )
+});
+// --------- end of mode buttons message bus ---------
 
 // ------- start of Buttons -------
 
