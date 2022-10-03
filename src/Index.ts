@@ -48,7 +48,7 @@ mrcbuildingPCoorporativ.setParent(_scene)
 const transform5 = new Transform({
   position: new Vector3(8,0,16), // -23
   rotation: Quaternion.Euler(0, 270, 0),
-  scale: new Vector3(1, 1, 1)
+  scale: new Vector3(1, 1, 0.99)
 })
 mrcbuildingPCoorporativ.addComponentOrReplace(transform5)
 const gltfShape3 = new GLTFShape("Models/corporativeMode/corporativeMode6.glb")
@@ -82,7 +82,7 @@ mrcbuildingPartymood.addComponentOrReplace(gltfShape4)
 //   scale: new Vector3(1, 1, 1)
 // })
 // partymoodLightProjections.addComponentOrReplace(transform7)
-// const gltfShape5 = new GLTFShape("4007ce5a-051e-4ae7-b7c3-1ce3b051862d/MrcBuilding008_p05_partymode_lightanimation_00_projections.glb")
+// const gltfShape5 = new GLTFShape("Models/lightProjections/projection.glb")
 // gltfShape5.withCollisions = true
 // gltfShape5.isPointerBlocker = true
 // gltfShape5.visible = true
@@ -98,13 +98,13 @@ const purpleLight = new Entity();
 const blueLight = new Entity();
 const orangeLight = new Entity();
 
-const gltfShapeGreenLight = new GLTFShape("4007ce5a-051e-4ae7-b7c3-1ce3b051862d/MrcBuilding008_p05_partymode_lightanimation_05_green.glb")
+const gltfShapeGreenLight = new GLTFShape("Models/lightProjections/green.glb")
 greenLight.addComponent(gltfShapeGreenLight)
 
-const gltfShapeYellowLight = new GLTFShape("4007ce5a-051e-4ae7-b7c3-1ce3b051862d/MrcBuilding008_p05_partymode_lightanimation_04_yellow.glb")
-const gltfShapePurpleLight = new GLTFShape("4007ce5a-051e-4ae7-b7c3-1ce3b051862d/MrcBuilding008_p05_partymode_lightanimation_03_violet.glb")
-const gltfShapeBlueLight = new GLTFShape("4007ce5a-051e-4ae7-b7c3-1ce3b051862d/MrcBuilding008_p05_partymode_lightanimation_02_blue.glb")
-const gltfShapeOrangeLight = new GLTFShape("4007ce5a-051e-4ae7-b7c3-1ce3b051862d/MrcBuilding008_p05_partymode_lightanimation_01_orange.glb")
+const gltfShapeYellowLight = new GLTFShape("Models/lightProjections/yellow.glb")
+const gltfShapePurpleLight = new GLTFShape("Models/lightProjections/violet.glb")
+const gltfShapeBlueLight = new GLTFShape("Models/lightProjections/blue.glb")
+const gltfShapeOrangeLight = new GLTFShape("Models/lightProjections/orange.glb")
 
 const lightTransform = new Transform({
   position: new Vector3(0,-3.75,0),

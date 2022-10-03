@@ -38,7 +38,7 @@ export default {
     ThirdFloorOffsetX: 12.5,
     FourthFloorOffsetX: 14,
     FifthFloorOffsetX: 12.5,
-    MeetingFloorOffsetX: 14
+    MeetingFloorOffsetX: 13.9
   },
   Text: {
     GroundButtonText: "Ground Floor(1)",
