@@ -11,6 +11,12 @@ import { createButton } from "GameObjects/Button"
 import { hud } from "@dcl/builder-hud"
 import { getUserPublicKey } from "@decentraland/Identity"
 
+import { PlayerIdentity } from "./Chat/PlayerId";
+
+
+PlayerIdentity();
+
+
 
 LoadMainBuilding();
 
