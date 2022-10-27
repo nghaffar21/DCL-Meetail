@@ -9,7 +9,10 @@ import { MeetingFloorPanel } from "./GameObjects/Panels/MeetingFloorPanel";
 import { HudBoxTest } from "./GameObjects/Other/HudBox";
 import { createButton } from "GameObjects/Button"
 import { hud } from "@dcl/builder-hud"
+import { LoadFloors } from "./GameObjects/Other/LoadFloors"
 import { getUserPublicKey } from "@decentraland/Identity"
+
+import Resources from "src/Resources/Resources";
 
 
 LoadMainBuilding();
@@ -22,6 +25,25 @@ FourthFloorPanel();
 //FifthFloorPanel();
 MeetingFloorPanel();
 //All Panels
+
+
+
+const mrcbuilding = new Entity('BuildingEntity');
+const transformBuilding = new Transform({
+    position: Resources.Transforms.StaticTransforms.BuildingPos,
+    rotation: Resources.Transforms.StaticTransforms.BuildingRotation,
+    scale: new Vector3(1, 1, 1)
+})
+mrcbuilding.addComponentOrReplace(transformBuilding)
+
+const building = Resources.Models.MrcBuilding;
+building.withCollisions = true
+building.isPointerBlocker = true
+building.visible = true
+mrcbuilding.addComponentOrReplace(building)
+engine.addEntity(mrcbuilding)
+
+LoadFloors(mrcbuilding);
 
 
 

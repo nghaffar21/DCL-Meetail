@@ -3,7 +3,10 @@ export default {
   {
     TestModel: new GLTFShape("models/cubeTest.glb"),
     MrcBuilding: new GLTFShape("Models/building/MrcBuilding6.glb"),
-    MrcPanel: new GLTFShape("models/MrcPanel.glb")
+    MrcPanel: new GLTFShape("models/MrcPanel.glb"),
+    GroundFloor: new GLTFShape("Models/floors/P01_MarcoMKT.glb"),
+    FirstFloor: new GLTFShape("Models/floors/P02_XINNUX.glb"),
+    SecondFloor: new GLTFShape("Models/floors/P03_Meetail_Blueo.glb")
   },
   Variables:
   {
@@ -64,7 +67,7 @@ export default {
       SecondFloor: new Vector3(3, 3.5, 15),
       ThirdFloor: new Vector3(4, 9.32, 15),
       FourthFloor: new Vector3(3, 14.5, 15),
-      FifthFloor: new Vector3(3, 20.58, 15),
+      FifthFloor: new Vector3(3, 14.5, 15),
       SixthFloor: new Vector3(3, 20.75, 15),//31.84
     },
   },
