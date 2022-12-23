@@ -12,7 +12,11 @@ import { hud } from "@dcl/builder-hud"
 import { LoadFloors } from "./GameObjects/Other/LoadFloors"
 import { getUserPublicKey } from "@decentraland/Identity"
 
-import Resources from "src/Resources/Resources";
+import { PlayerIdentity } from "./Chat/PlayerId";
+
+
+PlayerIdentity();
+
 
 
 LoadMainBuilding();

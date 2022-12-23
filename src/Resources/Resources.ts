@@ -11,6 +11,7 @@ export default {
   Variables:
   {
 
+    KeepSocketAliveTime: 10000,
     TeleportDelay: 100,
 
     GroundFirstRowButtonOffetY: 1.03,
