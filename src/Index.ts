@@ -396,41 +396,41 @@ createButton(_scene, new Vector3(6.5, 0.4, 12.9), new Vector3(0.7,0.7,0.7),
 // ------- end of button for sending messages -------
 
 // ------- Video Screen -------
-// #1
-const myVideoClip = new VideoClip(
-  'https://player.vimeo.com/external/552481870.m3u8?s=c312c8533f97e808fccc92b0510b085c8122a875'
-)
-
-// #2
-const myVideoTexture = new VideoTexture(myVideoClip)
-
-// #3
-const myMaterial = new Material()
-myMaterial.albedoTexture = myVideoTexture
-myMaterial.roughness = 1
-myMaterial.specularIntensity = 0
-myMaterial.metallic = 0
-
-
-// #4
-const cylinder = new CylinderShape()
-cylinder.withCollisions = true
-const screen = new Entity()
-screen.addComponent(cylinder)
-screen.addComponent(
-  new Transform({
-    position: new Vector3(8, 1.3, 8),
-    scale: new Vector3(3, 5, 5)
-  })
-)
-screen.addComponent(myMaterial)
-screen.addComponent(
-  new OnPointerDown(() => {
-    myVideoTexture.playing = !myVideoTexture.playing
-  })
-)
-engine.addEntity(screen)
-
-// #5
-myVideoTexture.play()
+// // #1
+// const myVideoClip = new VideoClip(
+//   'https://player.vimeo.com/external/552481870.m3u8?s=c312c8533f97e808fccc92b0510b085c8122a875'
+// )
+//
+// // #2
+// const myVideoTexture = new VideoTexture(myVideoClip)
+//
+// // #3
+// const myMaterial = new Material()
+// myMaterial.albedoTexture = myVideoTexture
+// myMaterial.roughness = 1
+// myMaterial.specularIntensity = 0
+// myMaterial.metallic = 0
+//
+//
+// // #4
+// const cylinder = new CylinderShape()
+// cylinder.withCollisions = true
+// const screen = new Entity()
+// screen.addComponent(cylinder)
+// screen.addComponent(
+//   new Transform({
+//     position: new Vector3(8, 1.3, 8),
+//     scale: new Vector3(3, 5, 5)
+//   })
+// )
+// screen.addComponent(myMaterial)
+// screen.addComponent(
+//   new OnPointerDown(() => {
+//     myVideoTexture.playing = !myVideoTexture.playing
+//   })
+// )
+// engine.addEntity(screen)
+//
+// // #5
+// myVideoTexture.play()
 // ------- End of Video Screen -------
