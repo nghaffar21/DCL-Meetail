@@ -434,3 +434,51 @@ createButton(_scene, new Vector3(6.5, 0.4, 12.9), new Vector3(0.7,0.7,0.7),
 // // #5
 // myVideoTexture.play()
 // ------- End of Video Screen -------
+
+// ------- The tablets on the MarcoMkt floor -------
+// --- The button on the right ---
+
+const leftTablet = new Entity()
+engine.addEntity(leftTablet)
+leftTablet.addComponent(new BoxShape())
+const leftTabletTransform = new Transform({
+  position: new Vector3(4, 10.1, 27.5),
+  scale: new Vector3(1, 1, 2),
+  rotation: Quaternion.Euler(0, 90, 0)
+})
+leftTablet.addComponent(leftTabletTransform)
+
+// make the button invisible
+let tabletButtonMaterial = new Material()
+let transparentColor = new Color4(0, 0, 0, 0)
+tabletButtonMaterial.albedoColor = transparentColor
+leftTablet.addComponent(tabletButtonMaterial)
+
+leftTablet.addComponent(
+  new OnPointerDown(() => {
+    openExternalURL("https://job.marcomkt.com/jobs/Careers")
+  })
+)
+
+// --- The button on the left ---
+
+const rightTablet = new Entity()
+engine.addEntity(rightTablet)
+rightTablet.addComponent(new BoxShape())
+const rightTabletTransform = new Transform({
+  position: new Vector3(12, 10.1, 27.5),
+  scale: new Vector3(1, 1, 2),
+  rotation: Quaternion.Euler(0, 90, 0)
+})
+rightTablet.addComponent(rightTabletTransform)
+
+// make the button invisible
+rightTablet.addComponent(tabletButtonMaterial)
+
+rightTablet.addComponent(
+  new OnPointerDown(() => {
+    openExternalURL("https://job.marcomkt.com/jobs/Careers")
+  })
+)
+
+// ------- End of the tablets -------

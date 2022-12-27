@@ -296,13 +296,20 @@ export function ChatTextOffset() {
 
 
 // in-world trigger for UI
+
 const uiTrigger = new Entity()
 const transform = new Transform({
-  position: new Vector3(6.5, 16, 5),
-  scale: new Vector3(0.5, 0.5, 0.5),
+  position: new Vector3(5.8, 15.5, 3.5),
+  scale: new Vector3(1, 1, 1),
   rotation: Quaternion.Euler(0, 180, 0)
 })
 uiTrigger.addComponent(transform)
+
+// make the button invisible
+let buttonMaterial = new Material()
+let transparentColor = new Color4(0, 0, 0, 0)
+buttonMaterial.albedoColor = transparentColor
+uiTrigger.addComponent(buttonMaterial)
 
 uiTrigger.addComponent(
   new OnClick(() => {
@@ -314,12 +321,12 @@ uiTrigger.addComponent(
 uiTrigger.addComponent(new BoxShape())
 engine.addEntity(uiTrigger)
 
-const uiTriggerMaterial = new Material()
-uiTriggerMaterial.albedoTexture = toolTexture
+// const uiTriggerMaterial = new Material()
+// uiTriggerMaterial.albedoTexture = toolTexture
 
-uiTrigger.addComponent(uiTriggerMaterial)
+// uiTrigger.addComponent(uiTriggerMaterial)
 
-uiTrigger.addComponent(new utils.KeepRotatingComponent(Quaternion.Euler(0, 45, 0)))
+// uiTrigger.addComponent(new utils.KeepRotatingComponent(Quaternion.Euler(0, 45, 0)))
 
 // ----- Make the ui dissapear if the player is not in Xinnux floor -----
 
