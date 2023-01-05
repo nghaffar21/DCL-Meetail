@@ -94,7 +94,7 @@ container.onTextSubmit = new OnTextSubmit((x) => {
     text.height = "100px"
     text.vAlign = "top"
     text.hAlign = "left"
-    text.fontSize = 12
+    text.fontSize = 15
     ChatTextOffset();
     log("Offx " + offsetPosX + " OffY " + offsetPosY)
     text.positionX = offsetPosX + "px"
@@ -110,7 +110,7 @@ container.onTextSubmit = new OnTextSubmit((x) => {
 export function ReceiveMessage(supportMsg: string) {
   const text = new UIText(container)
   text.value = "Support: " + supportMsg
-  text.color = Color4.Gray()
+  text.color = Color4.White()
   text.width = "100%"
   text.height = "100px"
   text.vAlign = "top"
