@@ -73,7 +73,7 @@ export default {
     },
     DynamicTransforms: {
       //GroundFloor: new Vector3(6, 0, 15),
-      GroundFloor: new Vector3(8, 5, 30),
+      GroundFloor: new Vector3(4, 5, 15),
       SecondFloor: new Vector3(4, 9.32, 15), // 3, 3.5, 15
       ThirdFloor: new Vector3(4, 9.32, 15),
       FourthFloor: new Vector3(3, 14.5, 15),
